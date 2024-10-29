@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -15,4 +17,13 @@ public class EnemyAI : MonoBehaviour
     {
         
     }
+
+
+void OnTriggerEnter2D(Collider2D other){
+SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+//SceneManager.LoadScene("Main Menu");
+//Debug.Log("Collision Detected!");
+}
+
+
 }
