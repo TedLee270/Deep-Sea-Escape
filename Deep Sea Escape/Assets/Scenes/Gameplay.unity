@@ -2436,6 +2436,45 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.5}
   serializedVersion: 2
   m_Radius: 0.6
+--- !u!114 &1318653124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318653120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f7cca9f456e2740a93c4e3bddbd9d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1318653125
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318653120}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1384865223
 GameObject:
   m_ObjectHideFlags: 0
@@ -3968,6 +4007,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7948371328347656502, guid: 15cf6673f1fb5f649a6696eafb6d5ce1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1318653123}
+    - targetCorrespondingSourceObject: {fileID: 7948371328347656502, guid: 15cf6673f1fb5f649a6696eafb6d5ce1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1318653125}
+    - targetCorrespondingSourceObject: {fileID: 7948371328347656502, guid: 15cf6673f1fb5f649a6696eafb6d5ce1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1318653124}
   m_SourcePrefab: {fileID: 100100000, guid: 15cf6673f1fb5f649a6696eafb6d5ce1, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
