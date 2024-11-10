@@ -35,4 +35,23 @@ public class ScubaDiver : MonoBehaviour
     public void Move(Vector3 movement) {
         rb.AddForce(movement * speed);  
     }
+
+
+ private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "air")
+        {
+            // Uncomment to play an audio clip
+            // GetComponent<AudioSource>().Play();
+
+            // Uncomment to increase speed by 0.3f
+            // speed = speed + 0.3f;
+
+            // Uncomment to update the UI text
+            // UItexthere++;
+            // some.text = "" + UItexthere;
+
+            Destroy(other.gameObject); // Destroy the "air" GameObject
+        }
+    }
 }

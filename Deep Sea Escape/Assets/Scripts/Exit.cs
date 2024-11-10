@@ -17,9 +17,9 @@ public class Exit : MonoBehaviour
         
     }
 
-void OnTriggerEnter2D(Collider2D other){
-//SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-SceneManager.LoadScene("Main Menu");
-//Debug.Log("Collision Detected!");
-}
+    void OnTriggerEnter2D(Collider2D other) {
+    //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    SceneManager.LoadScene("Main Menu");
+    //Debug.Log("Collision Detected!");
+    }
 }
