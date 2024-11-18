@@ -39,7 +39,7 @@ public class ScubaDiver : MonoBehaviour
 
  private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "air")
+        if (other.gameObject.tag == "Oxygen")
         {
             // Uncomment to play an audio clip
             // GetComponent<AudioSource>().Play();
@@ -51,7 +51,7 @@ public class ScubaDiver : MonoBehaviour
             // UItexthere++;
             // some.text = "" + UItexthere;
 
-            Destroy(other.gameObject); // Destroy the "air" GameObject
+            Destroy(other.gameObject);
         }
     }
 }
